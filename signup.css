@@ -23,6 +23,17 @@ body {
   border-radius: 15px;
 }
 
-#profileHeader {
+.profileHeader {
   text-align: center;
+}
+
+.button-bottom {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  padding: 10px;
+}
+
+#profileSubmit{
+
 }

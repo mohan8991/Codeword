@@ -9,7 +9,9 @@
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
