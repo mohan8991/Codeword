@@ -1,0 +1,26 @@
+{
+  "name": "codeword",
+  "version": "1.0.0",
+  "description": "Community project forumn ",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "bower": "^1.8.8",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohan8991/codeword.git"
+  },
+  "author": "Mohan Krishna Gopi Krishna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohan8991/codeword/issues"
+  },
+  "homepage": "https://github.com/mohan8991/codeword#readme"
+}
