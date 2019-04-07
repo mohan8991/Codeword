@@ -14,9 +14,24 @@ body {
 }
 
 nav.fixed-top {
-  top: 5px;
-  right: 5px;
-  left: 5px;
-  border-radius: 5px;
+  top: 7px;
+  right: 7px;
+  left: 7px;
+  border-radius: 7px;
   background-color: #000000;
+}
+
+main {
+  padding-top: 5rem;
+}
+
+.main-content {
+  padding: 1.5rem 1.5rem;
+  /* text-align: center; */
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.head-form {
+  text-align: center;
 }
