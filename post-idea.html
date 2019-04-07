@@ -1,226 +1,229 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Codeword | Idea </title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="post-idea.css">
-    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <link rel="stylesheet" href="fonts\font-mfizz-2.4.1\font-mfizz.css">
-    <!-- TODO: Need to figure out a way to add to the end to make it faster -->
-    <script src="https://cdn.ckeditor.com/4.11.3/standard/ckeditor.js"></script>
-  </head>
-  <body>
-    <div class="wrapper"></div>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-      <a class="navbar-brand" href="#"><i class="fas fa-chess-king"></i> | CodeWord</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+<head>
+  <meta charset="utf-8">
+  <title>Codeword | Idea </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="post-idea.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <link rel="stylesheet" href="fonts\font-mfizz-2.4.1\font-mfizz.css">
+  <!-- TODO: Need to figure out a way to add to the end to make it faster -->
+  <script src="https://cdn.ckeditor.com/4.11.3/standard/ckeditor.js"></script>
+</head>
+
+<body>
+  <div class="wrapper"></div>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <a class="navbar-brand" href="#"><i class="fas fa-chess-king"></i> | CodeWord</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+
+      <!-- TODO: Add profile dropdown and remove the search button -->
+    </div>
+  </nav>
+
+  <!--  starting the content-->
+  <main role="main" class="container">
+    <div class="main-content">
+      <h2 class="head-form">Post your idea</h2>
+      <p class="head-form">Enter your detailed description of your project</p>
+      <hr>
+
+      <form>
+        <div class="container">
+          <div class="form-group row">
+            <label for="inputTitle3" class="col-sm-2 col-form-label">Title</label>
+            <div class="col-sm-10 col-lg-6">
+              <input type="text" class="form-control" id="inputTitle3" placeholder="Title">
             </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-        </form>
+          </div>
 
-        <!-- TODO: Add profile dropdown and remove the search button -->
-      </div>
-    </nav>
-
-    <!--  starting the content-->
-    <main role="main" class="container">
-      <div class="main-content">
-        <h2 class="head-form">Post your idea</h2>
-        <p class="head-form">Enter your detailed description of your project</p>
-        <hr>
-
-        <form>
-          <div class="container">
-            <div class="form-group row">
-              <label for="inputTitle3" class="col-sm-2 col-form-label">Title</label>
-              <div class="col-sm-10 col-lg-4">
-                <input type="text" class="form-control" id="inputTitle3" placeholder="Title">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="row">
-              <legend class="col-form-label col-sm-2 pt-0">Client</legend>
+          <div class="form-group">
+            <div class="row">
+              <legend class="col-form-label col-sm-2 pt-0">Technologies</legend>
               <fieldset>
-              <div class="form-check col-md-12">
-                <input class="form-check-input" type="checkbox" value="" id="html">
-                <label class="form-check-label" for="html">
-                  <i class="fab fa-html5"></i>
-                  HTML
-                </label>
-              </div>
-              <div class="form-check col-md-12">
-                <input class="form-check-input" type="checkbox" value="" id="angular">
-                <label class="form-check-label" for="angular">
-                  <i class="fab fa-angular"></i>
-                  AngularJS
-                </label>
-              </div>
-              <div class="form-check col-md-12">
-                <input class="form-check-input" type="checkbox" value="" id="react">
-                <label class="form-check-label" for="react">
-                  <i class="fab fa-react"></i>
-                  ReactJS
-                </label>
-              </div>
-              <div class="form-check col-md-12">
-                <input class="form-check-input" type="checkbox" value="" id="backboneJS">
-                <label class="form-check-label" for="backboneJS">
-                  <i class="icon-backbone"></i>
-                  BackboneJS
-                </label>
-              </div>
-              <div class="form-check col-md-12">
-                <input class="form-check-input" type="checkbox" value="" id="bootstrap">
-                <label class="form-check-label" for="bootstrap">
-                  <i class="icon-bootstrap"></i>
-                  Bootstrap
-                </label>
-              </div>
-              <div class="form-check col-md-12">
-                <input class="form-check-input" type="checkbox" value="" id="css3">
-                <label class="form-check-label" for="css3">
-                  <i class="icon-css3"></i>
-                  CSS3
-                </label>
-              </div>
-            </fieldset>
-            <fieldset>
-              <div class="form-check col-md-12">
-                <input class="form-check-input" type="checkbox" value="" id="sass">
-                <label class="form-check-label" for="sass">
-                  <i class="icon-sass"></i>
-                  SASS
-                </label>
-              </div>
+                <div class="form-check col-md-12">
+                  <input class="form-check-input" type="checkbox" value="" id="html">
+                  <label class="form-check-label" for="html">
+                    <i class="fab fa-html5"></i>
+                    HTML
+                  </label>
+                </div>
+                <div class="form-check col-md-12">
+                  <input class="form-check-input" type="checkbox" value="" id="angular">
+                  <label class="form-check-label" for="angular">
+                    <i class="fab fa-angular"></i>
+                    AngularJS
+                  </label>
+                </div>
+                <div class="form-check col-md-12">
+                  <input class="form-check-input" type="checkbox" value="" id="react">
+                  <label class="form-check-label" for="react">
+                    <i class="fab fa-react"></i>
+                    ReactJS
+                  </label>
+                </div>
+                <div class="form-check col-md-12">
+                  <input class="form-check-input" type="checkbox" value="" id="backboneJS">
+                  <label class="form-check-label" for="backboneJS">
+                    <i class="icon-backbone"></i>
+                    BackboneJS
+                  </label>
+                </div>
+                <div class="form-check col-md-12">
+                  <input class="form-check-input" type="checkbox" value="" id="bootstrap">
+                  <label class="form-check-label" for="bootstrap">
+                    <i class="icon-bootstrap"></i>
+                    Bootstrap
+                  </label>
+                </div>
+                <div class="form-check col-md-12">
+                  <input class="form-check-input" type="checkbox" value="" id="css3">
+                  <label class="form-check-label" for="css3">
+                    <i class="icon-css3"></i>
+                    CSS3
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class="form-check col-md-12">
+                  <input class="form-check-input" type="checkbox" value="" id="sass">
+                  <label class="form-check-label" for="sass">
+                    <i class="icon-sass"></i>
+                    SASS
+                  </label>
+                </div>
 
-              <div class="form-check col-md-12">
-                <input class="form-check-input" type="checkbox" value="" id="javascript">
-                <label class="form-check-label" for="javascript">
-                  <i class="icon-javascript"></i>
-                  Javascript
-                </label>
-              </div>
-            <div class="form-check col-md-12">
-              <input class="form-check-input" type="checkbox" value="" id="node">
-              <label class="form-check-label" for="node">
-                <i class="fab fa-node"></i>
-                NodeJS
-              </label>
+                <div class="form-check col-md-12">
+                  <input class="form-check-input" type="checkbox" value="" id="javascript">
+                  <label class="form-check-label" for="javascript">
+                    <i class="icon-javascript"></i>
+                    Javascript
+                  </label>
+                </div>
+                <div class="form-check col-md-12">
+                  <input class="form-check-input" type="checkbox" value="" id="node">
+                  <label class="form-check-label" for="node">
+                    <i class="fab fa-node"></i>
+                    NodeJS
+                  </label>
+                </div>
+                <div class="form-check col-md-12">
+                  <input class="form-check-input" type="checkbox" value="" id="java">
+                  <label class="form-check-label" for="java">
+                    <i class="fab fa-java"></i>
+                    Java
+                  </label>
+                </div>
+                <div class="form-check col-md-12">
+                  <input class="form-check-input" type="checkbox" value="" id="spring">
+                  <label class="form-check-label" for="spring">
+                    <i class="fab icon-spring"></i>
+                    Spring
+                  </label>
+                </div>
+                <div class="form-check col-md-12">
+                  <input class="form-check-input" type="checkbox" value="" id="jquery">
+                  <label class="form-check-label" for="jquery">
+                    <i class="icon-jquery"></i>
+                    JQuery
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class="form-check col-md-12">
+                  <input class="form-check-input" type="checkbox" value="" id="mysql">
+                  <label class="form-check-label" for="mysql">
+                    <i class="icon-mysql"></i>
+                    MySQL
+                  </label>
+                </div>
+                <div class="form-check col-md-12">
+                  <input class="form-check-input" type="checkbox" value="" id="tomcat">
+                  <label class="form-check-label" for="tomcat">
+                    <i class="icon-tomcat"></i>
+                    Apache Tomcat
+                  </label>
+                </div>
+                <div class="form-check col-md-12">
+                  <input class="form-check-input" type="checkbox" value="" id="cpp">
+                  <label class="form-check-label" for="cpp">
+                    <i class="icon-cplusplus"></i>
+                    C++
+                  </label>
+                </div>
+                <div class="form-check col-md-12">
+                  <input class="form-check-input" type="checkbox" value="" id="csharp">
+                  <label class="form-check-label" for="csharp">
+                    <i class="icon-csharp"></i>
+                    C#
+                  </label>
+                </div>
+                <div class="form-check col-md-12">
+                  <input class="form-check-input" type="checkbox" value="" id="python">
+                  <label class="form-check-label" for="python">
+                    <i class="icon-python"></i>
+                    Python
+                  </label>
+                </div>
+                <div class="form-check col-md-12">
+                  <input class="form-check-input" type="checkbox" value="" id="php">
+                  <label class="form-check-label" for="php">
+                    <i class="icon-php"></i>
+                    PHP
+                  </label>
+                </div>
+              </fieldset>
             </div>
-            <div class="form-check col-md-12">
-              <input class="form-check-input" type="checkbox" value="" id="java">
-              <label class="form-check-label" for="java">
-                <i class="fab fa-java"></i>
-                Java
-              </label>
+          </div>
+          <div class="row form-group">
+            <label for="inputDesc3" class="col-sm-2 col-form-label">Description</label>
+            <div class="col-md-8">
+              <textarea id="editor1" class="form-control" rows="8" cols="80"></textarea>
+              <!--  Script initialization for texteditor-->
+              <script type="text/javascript">
+                CKEDITOR.replace('editor1');
+
+                /*TODO: to access data need use
+                CKEDITOR.instances.editor1.getData()
+                This will output HTML and use ng-bind to bind the data to the HTML if needed
+                */
+              </script>
             </div>
-            <div class="form-check col-md-12">
-              <input class="form-check-input" type="checkbox" value="" id="spring">
-              <label class="form-check-label" for="spring">
-                <i class="fab icon-spring"></i>
-                Spring
-              </label>
-            </div>
-            <div class="form-check col-md-12">
-              <input class="form-check-input" type="checkbox" value="" id="jquery">
-              <label class="form-check-label" for="jquery">
-                <i class="icon-jquery"></i>
-                JQuery
-              </label>
-            </div>
-          </fieldset>
-          <fieldset>
-            <div class="form-check col-md-12">
-              <input class="form-check-input" type="checkbox" value="" id="mysql">
-              <label class="form-check-label" for="mysql">
-                <i class="icon-mysql"></i>
-                MySQL
-              </label>
-            </div>
-            <div class="form-check col-md-12">
-              <input class="form-check-input" type="checkbox" value="" id="tomcat">
-              <label class="form-check-label" for="tomcat">
-                <i class="icon-tomcat"></i>
-                Apache Tomcat
-              </label>
-            </div>
-            <div class="form-check col-md-12">
-              <input class="form-check-input" type="checkbox" value="" id="cpp">
-              <label class="form-check-label" for="cpp">
-                <i class="icon-cplusplus"></i>
-                C++
-              </label>
-            </div>
-            <div class="form-check col-md-12">
-              <input class="form-check-input" type="checkbox" value="" id="csharp">
-              <label class="form-check-label" for="csharp">
-                <i class="icon-csharp"></i>
-                C#
-              </label>
-            </div>
-            <div class="form-check col-md-12">
-              <input class="form-check-input" type="checkbox" value="" id="python">
-              <label class="form-check-label" for="python">
-                <i class="icon-python"></i>
-                Python
-              </label>
-            </div>
-            <div class="form-check col-md-12">
-              <input class="form-check-input" type="checkbox" value="" id="php">
-              <label class="form-check-label" for="php">
-                <i class="icon-php"></i>
-                PHP
-              </label>
-            </div>
-          </fieldset>
           </div>
         </div>
-            <div class="row form-group">
-              <label for="inputDesc3" class="col-sm-2 col-form-label">Description</label>
-              <div class="col-md-8">
-                <textarea id="editor1" class="form-control" rows="8" cols="80"></textarea>
-                <!--  Script initialization for texteditor-->
-                <script type="text/javascript">
-                  CKEDITOR.replace( 'editor1' );
-
-                  /*TODO: to access data need use
-                  CKEDITOR.instances.editor1.getData()
-                  This will output HTML and use ng-bind to bind the data to the HTML if needed
-                  */
-                </script>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-    </main>
+      </form>
+    </div>
+  </main>
 
 
-  </body>
+</body>
+
 </html>
