@@ -1,4 +1,4 @@
-package codeword.CodeWord.UserEntity;
+package codeword.CodeWord.Entity;
 
 public class User {
 	
