@@ -1,6 +1,19 @@
 package codeword.CodeWord.Entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+
+import javax.persistence.Id;
+
+import org.hibernate.annotations.GenericGenerator;
+
+@Entity
 public class User {
+	
+	@Id
+	@GenericGenerator(name = "customUUID", strategy = "uuid2")
+	@GeneratedValue(generator = "customUUID")
+	private int Id;
 	
 	private String userName;
 	private String password;
