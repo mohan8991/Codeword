@@ -1,4 +1,10 @@
 /.metadata/
 
-**/CodeWord/.classpath
+/CodeWord/.classpath
 **/CodeWord/.settings
+**/CodeWord/target
+
+.classpath
+.project
+.settings
+.springBeans

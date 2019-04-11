@@ -2,17 +2,14 @@ package codeword.CodeWord.Entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
-import org.hibernate.annotations.GenericGenerator;
 
 @Entity
 public class User {
 	
 	@Id
-	@GenericGenerator(name = "customUUID", strategy = "uuid2")
-	@GeneratedValue(generator = "customUUID")
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int Id;
 	
 	private String userName;
@@ -26,6 +23,9 @@ public class User {
 	private String state;
 	private String zip;
 	private String profilePic;
+	private Boolean isActive;
+	private String gitHubID;
+	
 	private int phoneNumber;
 	
 	public String getUserName() {
