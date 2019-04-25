@@ -15,12 +15,12 @@ public class UserRepoImpl implements UserRepo {
 	@PersistenceContext
 	private EntityManager em;
 	
-//	public List<User> findAllUser(){
-////		TODO: Need to implement allUser info
-//		List<User> alluser;
-//		return alluser;
-//	}
-//	
+	public List<User> findAllUser(){
+//		TODO: Need to implement allUser info
+		List<User> allUser = null;
+		return allUser;
+	}
+
 	@Override
 	public User findUserbyID(String Id) {
 		return em.find(User.class, Id);
