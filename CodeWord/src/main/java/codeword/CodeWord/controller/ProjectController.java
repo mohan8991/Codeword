@@ -1,5 +1,7 @@
 package codeword.CodeWord.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,6 +18,11 @@ public class ProjectController {
 	
 	@Autowired
 	ProjectService projectService;
+	
+	@RequestMapping(method = RequestMethod.GET, path ="/getAllPrj", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public List<Project> getAllProject(){
+		return projectService.getAllProject();
+	}
 	
 	@RequestMapping(method = RequestMethod.GET, path = "/get/{projectID}", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public Project getProjectByID(@PathVariable("projectID") String projectID) {
